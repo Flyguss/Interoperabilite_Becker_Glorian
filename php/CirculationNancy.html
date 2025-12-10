@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Incident circulation Nancy</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <style>#map { height: 600px; width: 100%; }</style>
+</head>
+<body>
+
+<h2>Carte Leaflet générée avec PHP</h2>
+<div id="map"></div>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script>
+var map = L.map('map').setView([48.6772, 6.1746], 13);
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; OpenStreetMap contributors'
+}).addTo(map);L.marker([48.677195245008, 6.1746699255038]).addTo(map).bindPopup("Chauffage urbain - Voirie: Rue barrée, sauf riverains, Stationnement interdit");
+L.marker([48.704007692799, 6.1360257802967]).addTo(map).bindPopup("Chantier ponctuel - Voirie: Rue barrée, sauf riverains *** Délestage-Déviat°: Déviation mise en place par rue Guynemer et Ambroise Paré");
+L.marker([48.676149274055, 6.1924426105307]).addTo(map).bindPopup("Chauffage urbain - Voirie: Rue barrée, Stationnement interdit *** Délestage-Déviat°: Av P Doumer");
+L.marker([48.67740319778, 6.1900232577675]).addTo(map).bindPopup("Chauffage urbain - Voirie: Réduction à une file de circulation, Stationnement interdit");
+L.marker([48.675560098604, 6.1960130842897]).addTo(map).bindPopup("Chauffage urbain - Voirie: Réduction à une file de circulation, Stationnement interdit, Gêne à la circulation");
+L.marker([48.69712384797, 6.1376801512008]).addTo(map).bindPopup("Travaux coordonnés - Voirie: Réduction à une file de circulation *** Délestage-Déviat°: cf plan joint");
+L.marker([48.6784276428, 6.1461569023054]).addTo(map).bindPopup("Travaux coordonnés - Voirie: Rue barrée, Circulation et stationnements interdits *** Délestage-Déviat°: cf plan joint");
+L.marker([48.698086916033, 6.1375299474532]).addTo(map).bindPopup("Travaux coordonnés - Voirie: Réduction à une file de circulation");
+L.marker([48.679660258962, 6.1474443629943]).addTo(map).bindPopup("Travaux coordonnés - Voirie: Rue barrée, Circulation et stationnements interdits *** Délestage-Déviat°: cf plan joint");
+L.marker([48.675957994632, 6.194352342285]).addTo(map).bindPopup("Chauffage urbain - Voirie: Rue barrée, Stationnement interdit *** Délestage-Déviat°: Rue marie Leczinska");
+L.marker([48.711916495484, 6.2482532610413]).addTo(map).bindPopup("Chantier ponctuel - Voirie: Réduction à une file de circulation, Circulation alternée");
+L.marker([48.684159714301, 6.2285517628653]).addTo(map).bindPopup("Travaux coordonnés - Voirie: Circulation et stationnement difficille à l\'avancée du chantier, Suppression d\'un sens de circulation (Rue en sens unique) *** Délestage-Déviat°: oui");
+L.marker([48.625564148883, 6.2044514821773]).addTo(map).bindPopup("Travaux coordonnés - Voirie: Circulation alternée, Circulation et stationnement difficille à l\'avancée du chantier, Gêne à la circulation");
+L.marker([48.676953347579, 6.1946151993279]).addTo(map).bindPopup("Chauffage urbain - Voirie: Gêne à la circulation, Rétrécissement des voies");
+L.marker([48.675691161525, 6.1954820070593]).addTo(map).bindPopup("Chauffage urbain - Voirie: Rue barrée, Stationnement interdit *** Délestage-Déviat°: rue Marie Leczinska");
+L.marker([48.702411405208, 6.2181688081614]).addTo(map).bindPopup("Chauffage urbain - Voirie: Rue barrée, sauf riverains, Stationnement interdit *** Délestage-Déviat°: rue de verdun");
+L.marker([48.701451960239, 6.2178093922694]).addTo(map).bindPopup("Chauffage urbain - Voirie: Circulation alternée, Stationnement interdit");
+L.marker([48.678196942913, 6.1438524698577]).addTo(map).bindPopup("Chantier ponctuel - Voirie: Gêne à la circulation, Réduction à une file de circulation, Réduction de circulation et itinéraire de déviation *** Délestage-Déviat°: boulevard des aiguillettes");
+L.marker([48.677257368034, 6.1974140517016]).addTo(map).bindPopup("Chauffage urbain - Voirie: Rue barrée, sauf riverains, Stationnement interdit");
+L.marker([48.678035241543, 6.1982321500624]).addTo(map).bindPopup("Chauffage urbain - Voirie: Gêne à la circulation, Rétrécissement des voies, Stationnement interdit");
+L.marker([48.659314491805, 6.2218987410819]).addTo(map).bindPopup("Eau potable et assainissement - Voirie: Rue barrée, sauf riverains, Stationnement interdit");
+L.marker([48.675255247689, 6.1782174296981]).addTo(map).bindPopup("Chauffage urbain - Voirie: Rue barrée, sauf riverains, Stationnement interdit *** Délestage-Déviat°: Rue clemenceau et G.Leclerc");
+L.marker([48.667114367547, 6.24543606973]).addTo(map).bindPopup("Travaux coordonnés - Voirie: Rue barrée, sauf riverains");
+L.marker([48.702022775234, 6.2057844502548]).addTo(map).bindPopup("Eau potable et assainissement - Voirie: Rue barrée, Stationnement interdit");
+L.marker([48.68126965444, 6.1935221138581]).addTo(map).bindPopup("Chauffage urbain - Voirie: Gêne à la circulation, Rétrécissement des voies, Stationnement interdit");
+L.marker([48.676774919697, 6.1722836122914]).addTo(map).bindPopup("Chauffage urbain - Voirie: Rue barrée, sauf riverains, Stationnement interdit");
+L.marker([48.719741491387, 6.2618658577029]).addTo(map).bindPopup("Eau potable et assainissement - Voirie: Circulation et stationnement interdit, sauf riverains, Déviation pour les piétons (pas de passage interdit)");
+L.marker([48.713983968824, 6.2564632164495]).addTo(map).bindPopup("Eau potable et assainissement - Voirie: Rue barrée, sauf riverains, Stationnement interdit");
+L.marker([48.714102448964, 6.2566774078019]).addTo(map).bindPopup("Chantier ponctuel - Voirie: Circulation et stationnement interdit, sauf riverains, Rue barrée, Rue barrée, sauf riverains *** Délestage-Déviat°: avenue des héleux");
+L.marker([48.674225595443, 6.1450009524659]).addTo(map).bindPopup("Chantier ponctuel - Voirie: Circulation et stationnement difficille à l\'avancée du chantier");
+L.marker([48.649068385048, 6.1933605543913]).addTo(map).bindPopup("Chantier ponctuel - Voirie: Rue barrée, sauf riverains, Stationnement interdit");
+L.marker([48.656832142414, 6.1556985676807]).addTo(map).bindPopup("Chantier ponctuel - Voirie: Rue barrée, Circulation et stationnement difficille à l\'avancée du chantier");
+</script>
+</body>
+</html>
