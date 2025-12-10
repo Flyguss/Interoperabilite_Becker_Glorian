@@ -1,0 +1,25 @@
+# Node
+node_modules/
+dist/
+build/
+
+# PHP
+vendor/
+
+# Environnements
+.env*
+
+# Logs
+*.log
+
+# Cache
+cache/
+tmp/
+
+# Éditeurs
+.vscode/
+.idea/
+
+# Systèmes
+.DS_Store
+Thumbs.db
