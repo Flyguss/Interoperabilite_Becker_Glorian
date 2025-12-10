@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Circulations — VélOstan'lib, Qualité de l'air & Météo</title>
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin=""/>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""></script>
+
+    <!-- page CSS -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- small favicon -->
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+</head>
+<body>
+  <header>
+    <h1>Circulations — VélOstan'lib • Air • Météo</h1>
+    <p class="subtitle">Décidez si vous prenez un vélo partagé en fonction météo, pollution et disponibilité.</p>
+  </header>
+
+  <main>
+    <section id="infos">
+      <div id="status">Initialisation…</div>
+      <ul id="meta">
+        <li id="geo-info">Géoloc : —</li>
+        <li id="weather-info">Météo : —</li>
+        <li id="air-info">Qualité de l'air : —</li>
+        <li id="stations-info">Stations chargées : —</li>
+      </ul>
+    </section>
+
+    <section id="map-container">
+      <div id="map"></div>
+    </section>
+
+    <section id="links">
+      <h2>APIs utilisées</h2>
+      <ul>
+        <li><a id="link-ipapi" target="_blank" rel="noopener">IP geolocation (ipapi)</a></li>
+        <li><a id="link-jcdecaux" target="_blank" rel="noopener">VélOstan'lib / JCDecaux (GBFS)</a></li>
+        <li><a id="link-openaq" target="_blank" rel="noopener">Qualité de l'air (OpenAQ)</a></li>
+        <li><a id="link-openweather" target="_blank" rel="noopener">Météo (OpenWeatherMap)</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-o9N1j8g+Y3M7h8aQmE2Vqg2gU6Q5b5tE1BvA9fC+5mY=" crossorigin=""></script>
+
+  <!-- App script -->
+  <script src="app.js"></script>
+</body>
+</html>
