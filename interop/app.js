@@ -4,11 +4,11 @@
    - Met à jour la carte Leaflet et popups.
 */
 
-/* CONFIGURATION : remplace ces clés par tes clés (si nécessaire) */
+/* CONFIGURATION */
 const CONFIG = {
-  JCDECAUX_KEY: "YOUR_JCDECAUX_KEY",            // si tu utilises JCDecaux API ; sinon utiliser data.gouv GBFS fichier public
-  OPENWEATHER_KEY: "YOUR_OPENWEATHERMAP_KEY",   // requis pour OpenWeatherMap
-  REFRESH_INTERVAL_MS: 60_000 // 1 minute ; pour demo, tu peux réduire/augmenter
+  JCDECAUX_KEY: "YOUR_JCDECAUX_KEY",            
+  OPENWEATHER_KEY: "YOUR_OPENWEATHERMAP_KEY",   
+  REFRESH_INTERVAL_MS: 60_000 
 };
 
 /* ENDPOINTS (liens exacts à afficher dans la page) */
